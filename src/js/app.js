@@ -123,6 +123,9 @@ function scrollHeader() {
     if(this.scrollY>=50) header.classList.add('scroll-header')
     const logo2 = logo.getAttribute('src')
     logo.src = logo2.replace('bookmark','modal')
+    document.querySelectorAll('.white-link').forEach(w =>{
+        w.style.color = 'white'
+    })
 }
 
 window.addEventListener('scroll',scrollHeader)

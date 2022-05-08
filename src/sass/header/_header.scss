@@ -2,6 +2,7 @@
 
 
 .change-theme {
+    width: 3%;
     right: 0;
     left: 30rem;
     @include media-breakpoint-up(lg){
@@ -23,6 +24,11 @@
 }
 
 body.dark-theme{
+    .hide-nav {
+        .nav-link {
+            color: black;
+        }
+    }    
     background-color:black;
     h1,h2,h3,h4,p,a,.link-nav,button,.nav-link{
         color: white;
