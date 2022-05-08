@@ -1,0 +1,90 @@
+@use '../custom' as *;
+
+
+.change-theme {
+    right: 2rem;
+    top: 3rem;
+    font-size:1.5rem;
+    cursor:pointer;
+
+    &:hover{
+        color: $secondary;
+    }
+}
+
+.hide-nav {
+    .nav-link {
+        color: black ;
+    }
+}
+
+body.dark-theme{
+    background-color:black;
+    h1,h2,h3,h4,p,a,.link-nav,button,.nav-link{
+        color: white;
+    }
+    .active{
+        color: #fff !important;
+    }
+    .accordion,.accordion-button.collapsed,.accordion-body{
+        background-color:black ;
+    }
+}
+
+.scroll-header {
+    //background-color:white;
+    background: $primary;
+}
+
+header{
+
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top:0;
+    padding-bottom: 2rem;
+    margin-bottom: 5rem;
+    .row{
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .hide-nav{
+        @include media-breakpoint-down(lg){
+            display: none;
+        }
+    }
+
+    .row > * {
+        padding-left: 0;
+    }
+
+    .modal-body{
+
+        nav{
+
+            &:first-of-type{
+                border-top: 1px solid hsl(229, 63%, 36%);
+            }
+            a{
+                border-bottom: 1px solid hsl(229, 63%, 36%);
+            }
+        }
+    }
+
+    a{
+
+        &:hover{
+            color: $secondary !important;
+        }
+    }
+}
+
+button{
+
+    &:hover{
+        background-color: white !important;
+        color: black !important;
+    }
+}

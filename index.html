@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+		<link rel="icon" type="image/png" sizes="32x32" href="src/images/bicycle.svg">
+		<title>Bookmark landing page</title>
+
+		<!-- Fonts google Rubik -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Rubik:ital,wght@0,400;1,500&display=swap" rel="stylesheet"> 
+
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="build/css/app.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="row mt-5 ps-3">
+				<div class="col-6 logo">
+					<img src="./src/images/logo-bookmark.svg" alt="logo" class="img-logo">
+				</div>
+				<div class="col-lg-6 align-items-lg-center hide-nav">
+					<nav class="navbar-nav gap-5 mt-2 flex-lg-row justify-content-end">
+						<a href="#features" class="nav-link fw-bold fs-4 ">FEATURES</a>
+						<a href="#extension" class="nav-link fw-bold fs-4  ">PRICING</a>
+						<a href="#contact" class="nav-link fw-bold  fs-4 ">CONTACT</a>
+						<button class="btn btn-secondary  fw-bold w-25 rounded-pill text-white">LOGIN</button>
+					</nav>
+					<i class="bi bi-moon change-theme position-absolute" id="theme-button"></i>
+				</div>
+				<!-- Mobile -->
+				<div class="col-6 d-flex justify-content-end d-lg-none">
+				<!-- Button trigger modal -->
+					<button type="button" class="btn d-lg-none" data-bs-toggle="modal" data-bs-target="#menuModal">
+						<img src="src/images/icon-hamburger.svg" alt="Img hamburguer">
+					</button>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade d-lg-none" id="menuModal" tabindex="-1">
+					<div class="modal-dialog modal-fullscreen-lg-down ">
+					<div class="modal-content opacity-75 px-5 py-5 bg-info">
+						<div class="d-flex justify-content-between mb-3">
+							<h5 class="modal-title" id="exampleModalLabel">
+								<img src="src/images/logo-modal.svg" alt="">
+							</h5>
+							<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+								<img src="src/images/icon-close.svg" alt="">
+							</button>
+						</div>
+						<div class="modal-body">
+							<nav class="navbar-nav align-items-center  gap-3 mt-2">
+								<a href="#" class="nav-link text-white pb-4 text-center fw-bold w-100 fs-2">FEATURES</a>
+								<a href="#" class="nav-link text-white pb-4 text-center fw-bold  w-100 fs-2">PRICING</a>
+								<a href="#" class="nav-link text-white pb-4 text-center fw-bold  w-100 fs-2">CONTACT</a>
+								<button class="btn border w-100 text-white fs-2 fw-bold mt-2">LOGIN</button>
+							</nav>
+						</div>
+						<div class="d-flex justify-content-center gap-5 mb-5">
+							<img src="src/images/icon-facebook.svg" alt="icono facebook">
+							<img src="src/images/icon-twitter.svg" alt="icono twitter">
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="container-xl my-5 section-1">
+			<div class="row">
+				<div class="col-lg-6 d-flex flex-column justify-content-center gap-3 text-center text-lg-start text">
+					<h1 class="fw-bold display-1">A Simple Bookmark Manager</h1>
+					<p class="text-danger fs-3 ">
+						A clean and simple interface to organize your favourite websites. Open a new 
+						browser tab and see your sites load instantly. Try it for free.
+					</p>
+					<div class="buttons mb-5 d-flex gap-3 justify-content-center justify-content-lg-start">
+						<button class="btn btn-primary fs-4 rounded-3">Get it on Chrome</button>
+						<button class="btn btn-danger fs-4 rounded-3">Get it on Firefox</button>
+					</div>
+				</div>
+				<div class="col-lg-6 img">
+					<img src="src/images/illustration-hero.svg" alt="imagen principal" class="imagenPrincipal">
+				</div>
+			</div>
+		</section><!-- Section 1 -->
+		<main class="container-xl text-center d-flex flex-column align-items-center mb-5 main" id="features">
+			<h2 class="fw-bold display-4">Features</h2>
+			<p class="text-danger fs-4 w-50">
+				Our aim is to make it quick and easy for you to access your favourite websites. 
+				Your bookmarks sync between your devices so you can access them on the go.
+			</p>
+			<div class="row mt-4 border-bottom ">
+				<div class="navbar-nav flex-lg-row gap-lg-5  navigation">
+					<a href="#" class="nav-link fs-3 text-danger pb-lg-4 pb-3  active px-5 link-nav ">Simple Bookmarking</a>
+					<a href="#intelligent" class="nav-link fs-3 text-danger pb-lg-4 pb-3 px-5 link-nav ">Speedy Searching</a>
+					<a href="#" class="nav-link fs-3 text-danger pb-lg-4 pb-3 px-5 link-nav ">Easy Sharing</a>
+				</div>
+			</div>
+			<div class="text-content"><!-- Con JS --></div>
+		</main>
+		<section class="container-xl text-center d-flex flex-column align-items-center my-5 " id="extension">
+			<h2 class="fw-bold fs-1">Download the extension</h2>
+			<p class="text-danger fs-4 w-50">
+				We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+				got a favourite you’d like us to prioritize.
+			</p>
+			<div class="row w-100 gap-5 justify-content-center boxes mt-5 ">
+				<div class="col-lg-3 border p-4 box box1">
+					<img src="src/images/logo-chrome.svg" alt="" class="img-fluid mb-4 logo">
+					<h4 class="fw-bold">Add to Chrome</h4>
+					<p class="text-danger fs-6 w-50 mx-auto">Minimum version 62</p>
+					<img src="src/images/bg-dots.svg" alt="" class="img-fluid mb-4">
+					<button class="btn btn-primary fs-4 w-100">Add & Install Extension</button>
+				</div>
+				<div class="col-lg-3 border p-4 box box2 ">
+					<img src="src/images/logo-firefox.svg" alt="" class="img-fluid mb-4 logo">
+					<h4 class="fw-bold">Add to Firefox</h4>
+					<p class="text-danger fs-6 w-50 mx-auto">Minimum version 55</p>
+					<img src="src/images/bg-dots.svg" alt="" class="img-fluid mb-4">
+					<button class="btn btn-primary fs-4 w-100">Add & Install Extension</button>
+				</div>
+				<div class="col-lg-3 border p-4 box box3 ">
+					<img src="src/images/logo-chrome.svg" alt="" class="img-fluid mb-4 logo">
+					<h4 class="fw-bold">Add to opera</h4>
+					<p class="text-danger fs-6 w-50 mx-auto">Minimum version 46</p>
+					<img src="src/images/bg-dots.svg" alt="" class="img-fluid mb-4">
+					<button class="btn btn-primary fs-4 w-100">Add & Install Extension</button>
+				</div>
+			</div>
+		</section>
+		<section class="container-xl text-center d-flex flex-column align-items-center my-5">
+			<h1 class="fw-bold display-4">Frequently Asked Questions</h1>
+			<p class="text-danger fs-4 w-50 my-4">
+				Here are some of our FAQs. If you have any other questions you’d like 
+				answered please feel free to email us.
+			</p>
+
+			  <!-- Accordion -->
+			  <div class="container-sm">
+				<div class="accordion accordion-flush" id="accordionExample">
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="headingOne">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" >
+							What is Bookmark?
+						</button>
+					  </h2>
+					  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+						  <p class="text-danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+							justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+						</div>
+					  </div>
+					</div>
+					<div class="accordion-item">
+					  <h2 class="accordion-header display-4" id="headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+							How can I request a new browser?
+						</button>
+					  </h2>
+					  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+						  <p class="text-danger">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+							Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+							ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+							Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+						</div>
+					  </div>
+					</div>
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="headingThree">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+							Is there a mobile app?
+						</button>
+					  </h2>
+					  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<p class="text-danger">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+								urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+								sollicitudin ex et ultricies bibendum.</p>
+						</div>
+					  </div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFour">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+							What about other Chromium browsers?
+						  </button>
+						</h2>
+						<div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						  <div class="accordion-body">
+							  <p class="text-danger">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+								vitae neque eget nisl gravida pellentesque non ut velit.</p>
+						  </div>
+						</div>
+					  </div>
+				  </div><!-- Accordion finishes -->
+				  <button class="btn btn-primary p-3 rounded-3 fs-5 moreInfo mt-5">More Info</button>
+			  </div>
+		</section>
+		<section class="contact text-white bg-primary text-center p-5 position-relative" id="contact">
+			<p class="fs-4 text-uppercase">35,000+ already joined</p>
+			<h1 class="fw-bold mb-5 w-50 mx-auto">Stay up-to-date with what we’re doing</h1>
+			<form class="d-grid d-lg-flex justify-content-center gap-3 needs-validation" novalidate>
+				<div class="position-relative">
+					<input type="email" class="form-control" placeholder="Enter your email address" required>
+					<div class="invalid-tooltip">
+						Whoops, make sure it's an email!
+					</div>
+				</div>
+				<button type="submit" class="btn btn-secondary text-white ">Contact Us</button>
+			</form>
+			<button class="btn btn-danger position-fixed subir">
+				<img src="src/images/arrow-up-square-fill.svg" alt="arrow">
+				SUBIR
+			</button>
+		</section>
+
+		<footer class="bg-dark p-5">
+			<div class="row d-flex gap-5 gap-lg-0 align-items-center text-center">
+				<div class="col-lg-3">
+					<a href="#" class="logo-button">
+						<img src="src/images/logo-modal.svg" alt="imagen logo" class="img-fluid me-4">
+					</a>
+				</div>
+				<div class="col-lg-7">
+					<nav class="navbar-nav flex-lg-row gap-lg-5 gap-3 ">
+						<a href="#" class="nav-link text-white  fs-4 text-dark">FEATURES</a>
+						<a href="#" class="nav-link text-white  fs-4 text-dark ">PRICING</a>
+						<a href="#" class="nav-link text-white   fs-4 text-dark">CONTACT</a>
+					</nav>
+				</div>
+				<div class="icons col-lg-2 d-flex gap-5 justify-content-center">
+					<a href="#">
+						<img src="src/images/icon-facebook.svg" alt="icono facebook">
+					</a>
+					<a href="#">
+						<img src="src/images/icon-twitter.svg" alt="icono twitter">
+					</a>
+				</div>
+			</div>
+		</footer>
+
+	<!-- 
+
+	Features
+	Pricing
+	Contact -->
+	<!-- libreria scrollreveal -->
+	<script src="src/js/scrollreveal.min.js"></script>
+	<!-- Libreria elevator js -->
+	<script src="src/js/elevator.js"></script>
+	<!-- Script app -->
+	<script src="src/js/app.js"></script>
+	<!-- Script bootstrap -->
+	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

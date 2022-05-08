@@ -1,0 +1,28 @@
+$blue : hsl(231, 69%, 60%);
+$red : hsl(0, 94%, 66%);
+$gray : hsl(229, 8%, 60%);
+$darkblue : hsl(229, 31%, 21%);
+$bg : hsl(229, 69%, 16%);
+
+/* Paleta de colores */
+
+$primary : $blue;
+$secondary : $red;
+$danger : $gray;
+$dark: $darkblue;
+$info:$bg;
+
+/* Botones */
+$btn-hover-bg-shade-amount:       99%;
+$btn-hover-bg-tint-amount:        99%;
+
+/* Accordion icon active */
+$accordion-icon-active-color:  $secondary;
+/* $accordion-button-active-color:$secondary; */
+
+$form-feedback-invalid-color:$secondary;
+
+//$accordion-bg:  black;
+
+//Importar Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
