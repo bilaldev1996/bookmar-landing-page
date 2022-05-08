@@ -11123,10 +11123,16 @@ textarea.form-control-lg {
   }
 }
 .change-theme {
-  right: 2rem;
-  top: 3rem;
+  right: 0;
+  left: 30rem;
   font-size: 1.5rem;
   cursor: pointer;
+}
+@media (min-width: 992px) {
+  .change-theme {
+    top: 0rem;
+    left: 40rem;
+  }
 }
 .change-theme:hover {
   color: hsl(0deg, 94%, 66%);
@@ -11154,6 +11160,7 @@ body.dark-theme .accordion, body.dark-theme .accordion-button.collapsed, body.da
 }
 
 header {
+  background-color: #fff;
   width: 100%;
   position: fixed;
   z-index: 10;

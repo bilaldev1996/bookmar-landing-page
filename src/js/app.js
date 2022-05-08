@@ -121,7 +121,8 @@ function scrollHeader() {
     }
 
     if(this.scrollY>=50) header.classList.add('scroll-header')
-    logo.src = logo.src.replace('bookmark','modal')
+    const logo2 = logo.getAttribute('src')
+    logo.src = logo2.replace('bookmark','modal')
 }
 
 window.addEventListener('scroll',scrollHeader)

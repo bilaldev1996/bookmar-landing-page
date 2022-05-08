@@ -17,10 +17,11 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="row mt-5 ps-3">
+			<div class="row mt-5 ps-3 position-relative align-items-lg-center">
 				<div class="col-6 logo">
-					<img src="./src/images/logo-bookmark.svg" alt="logo" class="img-logo">
+					<img src="src/images/logo-bookmark.svg" alt="logo" class="img-logo">
 				</div>
+				<i class="bi bi-moon change-theme position-absolute " id="theme-button"></i>
 				<div class="col-lg-6 align-items-lg-center hide-nav">
 					<nav class="navbar-nav gap-5 mt-2 flex-lg-row justify-content-end">
 						<a href="#features" class="nav-link fw-bold fs-4 ">FEATURES</a>
@@ -28,7 +29,6 @@
 						<a href="#contact" class="nav-link fw-bold  fs-4 ">CONTACT</a>
 						<button class="btn btn-secondary  fw-bold w-25 rounded-pill text-white">LOGIN</button>
 					</nav>
-					<i class="bi bi-moon change-theme position-absolute" id="theme-button"></i>
 				</div>
 				<!-- Mobile -->
 				<div class="col-6 d-flex justify-content-end d-lg-none">
@@ -202,8 +202,9 @@
 			<p class="fs-4 text-uppercase">35,000+ already joined</p>
 			<h1 class="fw-bold mb-5 w-50 mx-auto">Stay up-to-date with what we’re doing</h1>
 			<form class="d-grid d-lg-flex justify-content-center gap-3 needs-validation" novalidate>
-				<div class="position-relative">
-					<input type="email" class="form-control" placeholder="Enter your email address" required>
+				<div class="position-relative form-floating text-black">
+					<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+  					<label for="floatingInput">Email address</label>
 					<div class="invalid-tooltip">
 						Whoops, make sure it's an email!
 					</div>
